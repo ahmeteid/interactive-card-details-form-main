@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-transform: capitalize;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    transform: translate(10%, 20%);
+    -webkit-transform: translate(10%, 20%);
+    -moz-transform: translate(10%, 20%);
+    -ms-transform: translate(10%, 20%);
+    -o-transform: translate(10%, 20%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20%;
+}
+
+.main-container .b-ground img {
+    height: 100%;
+}
+
+.main-container .carts {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+.main-container .carts .front {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.main-container .carts .front .circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-container .carts .front .circles .big-c {
+    position: inherit;
+    background-color: #eee;
+    top: 20px;
+    left: 25px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.main-container .carts .front .circles .small-c {
+    position: inherit;
+    top: 30px;
+    left: 70px;
+    background-color: transparent;
+    border: 1px solid #eee;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.main-container .carts .front .f-number {
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+    color: #eee;
+    word-spacing: 1.8rem;
+    letter-spacing: 5px;
+}
+
+.main-container .carts .front .f-info {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    color: #eee;
+}
+
+.main-container .carts .front .f-info .f-name {
+    letter-spacing: 1.5px;
+}
+
+.main-container .carts .front .f-info .f-date {
+    letter-spacing: 2px;
+}
+
+.main-container .carts .back {
+    position: absolute;
+    left: 90px;
+}
+
+.main-container .carts .back .cvc {
+    position: absolute;
+    top: 110px;
+    right: 48px;
+    color: #eee;
+    letter-spacing: 1.5px;
+}
