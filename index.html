@@ -49,8 +49,11 @@
             placeholder="e.g. 1234 5678 9123 0000"
           />
           <div class="date-information">
-            <div class="date-info">
+            <div class="lb-date">
               <label for="date-info">exp.date(mm/yy)</label>
+              <label for="cvc" class="cvc">cvc</label>
+            </div>
+            <div class="date-info">
               <input
                 type="number"
                 id="date-info"
@@ -58,18 +61,23 @@
                 max="12"
                 placeholder="MM"
               />
-              <input type="number" min="0" max="99" placeholder="YY" />
+              <input
+                class="years"
+                type="number"
+                min="0"
+                max="99"
+                placeholder="YY"
+              />
+              <input
+                type="number"
+                id="cvc"
+                min="100"
+                max="999"
+                placeholder="e.g. 123"
+              />
             </div>
-            <label for="cvc">cvc</label>
-            <input
-              type="number"
-              id="cvc"
-              min="100"
-              max="999"
-              placeholder="e.g. 123"
-            />
           </div>
-          <input type="submit" value="confirm" />
+          <input class="confirm" type="submit" value="confirm" />
         </form>
       </div>
     </div>
