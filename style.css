@@ -44,11 +44,27 @@ input {
 @media (max-width: 767px) {
     .main-container {
         flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        box-shadow: none;
     }
 }
 
 .main-container .b-ground img {
     height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .main-container .b-ground img {
+        height: 250px;
+    }
 }
 
 .main-container .carts {
@@ -57,15 +73,41 @@ input {
     left: 150px;
 }
 
+@media (max-width: 767px) {
+    .main-container .carts {
+        left: 10px;
+        top: -500px;
+    }
+}
+
 .main-container .carts .front {
     position: relative;
     margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .main-container .carts .front {
+        margin: 0;
+        top: 630px;
+        z-index: 5;
+    }
+
+    .main-container .carts .front img {
+        width: 300px;
+        margin-left: 10px;
+    }
 }
 
 .main-container .carts .front .circles {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+@media (max-width: 767px) {
+    .main-container .carts .front .circles {
+        left: 40px;
+    }
 }
 
 .main-container .carts .front .circles .big-c {
@@ -106,6 +148,15 @@ input {
     letter-spacing: 5px;
 }
 
+@media (max-width: 767px) {
+    .main-container .carts .front .f-number {
+        left: 30px;
+        bottom: 50px;
+        word-spacing: 0;
+        letter-spacing: 3px;
+    }
+}
+
 .main-container .carts .front .f-info {
     position: absolute;
     bottom: 30px;
@@ -130,6 +181,18 @@ input {
     left: 90px;
 }
 
+@media (max-width: 767px) {
+    .main-container .carts .back {
+        left: 50px;
+        top: 536px;
+        z-index: 4;
+    }
+
+    .main-container .carts .back img {
+        width: 300px;
+    }
+}
+
 .main-container .carts .back .cvc {
     position: absolute;
     top: 110px;
@@ -138,8 +201,21 @@ input {
     letter-spacing: 1.5px;
 }
 
+@media (max-width: 767px) {
+    .main-container .carts .back .cvc {
+        top: 71px;
+        right: 37px;
+    }
+}
+
 .main-container .pay-information {
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    .main-container .pay-information {
+        padding: 0 30px;
+    }
 }
 
 .main-container .pay-information form {
@@ -151,6 +227,19 @@ input {
     -moz-transform: translateY(200px);
     -ms-transform: translateY(200px);
     -o-transform: translateY(200px);
+}
+
+@media (max-width: 767px) {
+    .main-container .pay-information form {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 35px;
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+        -o-transform: translateY(100px);
+    }
 }
 
 .main-container .pay-information form .date-information {
@@ -178,6 +267,13 @@ input {
 
 .main-container .pay-information form .date-information .date-info #cvc {
     margin-left: 20px;
+}
+
+.main-container .pay-information form .date-information .date-info .years,
+.main-container .pay-information form .date-information .date-info .month {
+    padding: 10px 0;
+    width: fit-content;
+    text-align: center;
 }
 
 .main-container .pay-information form .date-information .date-info .years {
