@@ -27,10 +27,12 @@
             <div class="big-c"></div>
             <div class="small-c"></div>
           </div>
-          <h2 class="f-number">0000 0000 0000 0000</h2>
+          <h2 class="f-number"></h2>
           <div class="f-info">
-            <span class="f-name">jane appleseed</span>
-            <span class="f-date">00/00</span>
+            <span class="f-name"></span>
+            <span class="f-date"
+              ><span class="show-month"></span>/<span class="show-year"></span
+            ></span>
           </div>
         </div>
         <div class="back">
@@ -41,12 +43,18 @@
       <div class="pay-information">
         <form>
           <label for="name">cardholder name</label>
-          <input type="text" id="name" placeholder="e.g. Jane Appleseed" />
+          <input
+            type="text"
+            id="name"
+            placeholder="e.g. Jane Appleseed"
+            required
+          />
           <label for="card-number">card number</label>
           <input
             type="number"
             id="card-number"
             placeholder="e.g. 1234 5678 9123 0000"
+            required
           />
           <div class="date-information">
             <div class="lb-date">
@@ -54,6 +62,20 @@
               <label for="cvc" class="cvc">cvc</label>
             </div>
             <div class="date-info">
+              <!-- <select id="date-info">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select> -->
               <input
                 class="month"
                 type="number"
@@ -61,13 +83,15 @@
                 min="0"
                 max="12"
                 placeholder="MM"
+                required
               />
               <input
                 class="years"
                 type="number"
-                min="0"
+                min="1"
                 max="99"
                 placeholder="YY"
+                required
               />
               <input
                 type="number"
@@ -75,6 +99,7 @@
                 min="100"
                 max="999"
                 placeholder="e.g. 123"
+                required
               />
             </div>
           </div>
@@ -90,5 +115,7 @@
     Completed state start
 
     Thank you! We've added your card details Continue -->
+
+    <script src="script.js"></script>
   </body>
 </html>

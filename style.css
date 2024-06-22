@@ -261,6 +261,15 @@ input {
     display: flex;
 }
 
+/* .main-container .pay-information form .date-information .date-info #date-info {
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+} */
+
 .main-container .pay-information form .date-information .date-info input {
     margin-bottom: 0;
 }
